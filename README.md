@@ -9,8 +9,8 @@
 Justpaste adalah alat untuk melakukan scraping link dari situs [Justpaste.it](https://justpaste.it/) menggunakan Google sebagai mesin pencarian. Tool ini dibuat untuk memudahkan Anda dalam mendapatkan tautan dari Justpaste.it secara otomatis.
 
 ## 🚀 Fitur Utama
-- 🔍 **Scraping Otomatis:** Dapatkan tautan dari Justpaste.it dengan cepat menggunakan query pencarian Google.
 - 🛠️ **Konfigurasi Mudah:** Sesuaikan pertanyaan pencarian sesuai kebutuhan Anda.
+- 🔍 **Scraping Otomatis:** Dapatkan tautan dari Justpaste.it dengan cepat menggunakan query pencarian Google.
 - 📂 **Penyimpanan Hasil:** Semua tautan yang ditemukan akan disimpan dalam file JSON untuk digunakan nanti.
 - ⚡ **Kunjungan Otomatis:** Opsi untuk mengunjungi setiap tautan dan mendapatkan informasi terkait.
 
@@ -38,6 +38,7 @@ Jika Anda belum menginstal `rich`, `httpx`, dan `beautifulsoup4`, tool ini akan 
     September 2024 site:justpaste.it
     ```
 Anda juga bisa menekan Enter untuk menggunakan pertanyaan default.
+
 4. **Pilih Opsi Kunjungan**: Pilih apakah Anda ingin mengunjungi setiap tautan yang ditemukan dan mengumpulkan lebih banyak informasi.
 5. **Dapatkan Hasil**: Tautan yang berhasil ditemukan akan disimpan dalam direktori `Temporary` dengan nama file yang unik.
 
