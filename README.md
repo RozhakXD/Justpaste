@@ -6,7 +6,7 @@
 
 ![Justpaste](https://github.com/user-attachments/assets/7ec54619-14da-4e40-8b32-d2a032c6052f)
 
-Justpaste adalah alat untuk melakukan scraping link dari situs [Justpaste.it](https://justpaste.it/) menggunakan Google sebagai mesin pencarian. Tool ini dibuat untuk memudahkan Anda dalam mendapatkan tautan dari Justpaste.it secara otomatis.
+**Justpaste** adalah alat untuk melakukan scraping link dari situs [Justpaste.it](https://justpaste.it/) menggunakan Google sebagai mesin pencarian. Tool ini dibuat untuk memudahkan Anda dalam mendapatkan tautan dari Justpaste.it secara otomatis.
 
 ## 🚀 Fitur Utama
 - 🛠️ **Konfigurasi Mudah:** Sesuaikan pertanyaan pencarian sesuai kebutuhan Anda.
