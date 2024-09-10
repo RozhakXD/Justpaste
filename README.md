@@ -37,7 +37,7 @@ Jika Anda belum menginstal `rich`, `httpx`, dan `beautifulsoup4`, tool ini akan 
     ```yaml
     September 2024 site:justpaste.it
     ```
-Anda juga bisa menekan Enter untuk menggunakan pertanyaan default.
+    Anda juga bisa menekan Enter untuk menggunakan pertanyaan default.
 
 4. **Pilih Opsi Kunjungan**: Pilih apakah Anda ingin mengunjungi setiap tautan yang ditemukan dan mengumpulkan lebih banyak informasi.
 5. **Dapatkan Hasil**: Tautan yang berhasil ditemukan akan disimpan dalam direktori `Temporary` dengan nama file yang unik.
