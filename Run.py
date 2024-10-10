@@ -18,18 +18,24 @@ class FEATURE:
 
     def MAIN(self):
         os.system('cls' if os.name == 'nt' else 'clear')
-        printf(Panel("""[bold red]  _______                ______                        \n (_______)           _  (_____ \             _         \n      _ _   _  ___ _| |_ _____) )____  ___ _| |_ _____ \n  _  | | | | |/___|_   _)  ____(____ |/___|_   _) ___ |\n | |_| | |_| |___ | | |_| |    / ___ |___ | | |_| ____|\n[bold white]  \___/|____/(___/   \__)_|    \_____(___/   \__)_____)\n        [bold green]Justpaste.it Link Scraper - by Rozhak""", width=60, style="bold bright_black"))
+        printf(Panel(r"""[bold red]  _______                ______                        
+ (_______)           _  (_____ \             _         
+      _ _   _  ___ _| |_ _____) )____  ___ _| |_ _____ 
+  _  | | | | |/___|_   _)  ____(____ |/___|_   _) ___ |
+ | |_| | |_| |___ | | |_| |    / ___ |___ | | |_| ____|
+[bold white]  \___/|____/(___/   \__)_|    \_____(___/   \__)_____)
+        [bold green]Justpaste.it Link Scraper - by Rozhak""", width=60, style="bold bright_black"))
 
-        printf(Panel(f"[bold white]Please fill in the question you will use for the search. For example:[bold green] September 2024 site:justpaste.it[bold white]\n*you can press `[bold red]Enter[bold white]` if you don't have a question!", width=60, style="bold bright_black", title="> [Pertanyaan] <", subtitle="╭───────", subtitle_align="left"))
+        printf(Panel(f"[bold white]Please fill in the question you will use for the search. For example:[bold green] September 2024 site:justpaste.it[bold white]\n*you can press `[bold red]Enter[bold white]` if you don't have a question!", width=60, style="bold bright_black", title="[bold bright_black]> [Pertanyaan] <", subtitle="[bold bright_black]╭───────", subtitle_align="left"))
         self.PERTANYAAN = Console().input("[bold bright_black]   ╰─> ")
         if len(self.PERTANYAAN) == 0:
             self.PERTANYAAN = PERTANYAAN_DEFAULT
         else:
             self.PERTANYAAN = self.PERTANYAAN
 
-        printf(Panel(f"[bold white]Do you want to visit justpaste.it link directly and find all the links there. Type[bold red] Y[bold white] if you want to display type[bold green] N[bold white] if you don't want to display!", width=60, style="bold bright_black", title="> [Visit Link] <", subtitle="╭───────", subtitle_align="left"))
+        printf(Panel(f"[bold white]Do you want to visit justpaste.it link directly and find all the links there. Type[bold red] Y[bold white] if you want to display type[bold green] N[bold white] if you don't want to display!", width=60, style="bold bright_black", title="[bold bright_black]> [Visit Link] <", subtitle="[bold bright_black]╭───────", subtitle_align="left"))
         self.VISIT = Console().input("[bold bright_black]   ╰─> ")
-        printf(Panel(f"[bold white]You must use `[bold green]AIRPLANE MODE[bold white]` to avoid spam. if you want to stop press[bold yellow] CTRL + C[bold white]\n*[bold red]remember not to use CTRL + Z to save the results[bold white]!", width=60, style="bold bright_black", title="> [Catatan] <"))
+        printf(Panel(f"[bold white]You must use `[bold green]AIRPLANE MODE[bold white]` to avoid spam. if you want to stop press[bold yellow] CTRL + C[bold white]\n*[bold red]remember not to use CTRL + Z to save the results[bold white]!", width=60, style="bold bright_black", title="[bold bright_black]> [Catatan] <"))
         self.FILENAME = (f"Temporary/{''.join(random.choice(string.ascii_letters + string.digits) for _ in range(5))}.json")
 
         CLASS = SCRAPING()
@@ -50,10 +56,10 @@ class FEATURE:
                 for URL in TAUTAN:
                     self.COMBINED_OUTPUT = VISIT().JUSTPASTE(URL=URL)
                     printf(Panel(f"{self.COMBINED_OUTPUT}", width=60, style="bold bright_black"))
-            printf(Panel(f"[bold white]You have successfully obtained[bold green] {len(TAUTAN)}[bold white] justpaste.it links and saved them in[bold red] {self.FILENAME}", width=60, style="bold bright_black", title="> [Selesai] <"))
+            printf(Panel(f"[bold white]You have successfully obtained[bold green] {len(TAUTAN)}[bold white] justpaste.it links and saved them in[bold red] {self.FILENAME}", width=60, style="bold bright_black", title="[bold bright_black]> [Selesai] <"))
             sys.exit()
         else:
-            printf(Panel(f"[bold red]Sorry, we didn't find any justpaste.it links, you can change the Query in this Tools!", width=60, style="bold bright_black", title="> [Tautan Kosong] <"))
+            printf(Panel(f"[bold red]Sorry, we didn't find any justpaste.it links, you can change the Query in this Tools!", width=60, style="bold bright_black", title="[bold bright_black]> [Tautan Kosong] <"))
             sys.exit()
 
 class SCRAPING:
@@ -226,7 +232,7 @@ if __name__=='__main__':
         os.system('git pull')
         FEATURE().MAIN()
     except (Exception) as e:
-        printf(Panel(f"[bold red]{str(e).capitalize()}", width=60, style="bold bright_black", title="> [Error] <"))
+        printf(Panel(f"[bold red]{str(e).capitalize()}", width=60, style="bold bright_black", title="[bold bright_black]> [Error] <"))
         sys.exit()
     except (KeyboardInterrupt):
         sys.exit()
